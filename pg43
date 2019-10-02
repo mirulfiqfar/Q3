@@ -1,0 +1,23 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    double loan,interest_rate,total_interest=0,totalpay=0,monthlypay=0;
+    int years;
+    
+    cout<<"Enter amount of loan\n";
+    cin>>loan;
+    cout<<"Enter annual interest rate\n";
+    cin>>interest_rate;
+    cout<<"Enter number of years u want to pay\n";
+    cin>>years;
+    
+    total_interest=(interest_rate/100)*loan*years;
+    totalpay=total_interest+loan;
+    monthlypay=totalpay/(12*years);
+    
+    cout<<"The amount u need to pay monthly is RM"<<monthlypay<<endl;
+}
